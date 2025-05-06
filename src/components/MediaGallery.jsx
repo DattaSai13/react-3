@@ -11,7 +11,8 @@ export default function MediaGallery({ userId, refresh, setRefresh }) {
       try {
         setLoading(true);
         setError('');
-        const response = await fetch(`http://localhost:80/react-31/api/get_files.php?user_id=${userId}`);
+        const response = await fetch(`companyportal.great-site.net
+/get_files.php?user_id=${userId}`);
         const data = await response.json();
 
         if (data.success) {
@@ -31,7 +32,8 @@ export default function MediaGallery({ userId, refresh, setRefresh }) {
 
   const handleDelete = async (fileId) => {
     try {
-      const response = await fetch('http://localhost:80/react-31/api/delete_file.php', {
+      const response = await fetch('companyportal.great-site.net
+/delete_file.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ file_id: fileId }),
