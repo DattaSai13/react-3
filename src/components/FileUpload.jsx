@@ -59,7 +59,7 @@ export default function FileUpload({ userId, setRefresh, fileType }) {
                   ? 'video'
                   : 'pdf');
 
-              const response = await fetch('http://localhost:80/react-31/api/upload.php', {
+              const response = await fetch('companyportal.great-site.net/upload.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
