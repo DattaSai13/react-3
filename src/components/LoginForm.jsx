@@ -12,7 +12,7 @@ export default function LoginForm({ setUser, setRefresh }) {
   const navigate = useNavigate();
 
   // API URL (unchanged from original)
-  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:80/react-31/api/check_number.php';
+  const apiUrl = import.meta.env.VITE_API_URL || 'companyportal.great-site.net/check_number.php';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
